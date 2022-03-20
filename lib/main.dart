@@ -36,68 +36,13 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       body: Column(children: [
         Container(
-          color: (count % 5 == 0)
-              ? Colors.black
-              : (count % 5 == 1)
-                  ? Colors.purple
-                  : (count % 5 == 2)
-                      ? Colors.red
-                      : (count % 5 == 3)
-                          ? Colors.blue
-                          : Colors.green,
-          height: 140,
+          color: (count % 2 == 0) ? Colors.black : Colors.white,
+          height: 368,
           width: 500,
         ),
         Container(
-          color: (count % 5 == 1)
-              ? Colors.black
-              : (count % 5 == 2)
-                  ? Colors.purple
-                  : (count % 5 == 3)
-                      ? Colors.red
-                      : (count % 5 == 4)
-                          ? Colors.blue
-                          : Colors.green,
-          height: 140,
-          width: 500,
-        ),
-        Container(
-          color: (count % 5 == 2)
-              ? Colors.black
-              : (count % 5 == 3)
-                  ? Colors.purple
-                  : (count % 5 == 4)
-                      ? Colors.red
-                      : (count % 5 == 0)
-                          ? Colors.blue
-                          : Colors.green,
-          height: 140,
-          width: 500,
-        ),
-        Container(
-          color: (count % 5 == 3)
-              ? Colors.black
-              : (count % 5 == 4)
-                  ? Colors.purple
-                  : (count % 5 == 0)
-                      ? Colors.red
-                      : (count % 5 == 1)
-                          ? Colors.blue
-                          : Colors.green,
-          height: 140,
-          width: 500,
-        ),
-        Container(
-          color: (count % 5 == 4)
-              ? Colors.black
-              : (count % 5 == 0)
-                  ? Colors.purple
-                  : (count % 5 == 1)
-                      ? Colors.red
-                      : (count % 5 == 2)
-                          ? Colors.blue
-                          : Colors.green,
-          height: 140,
+          color: (count % 2 == 1) ? Colors.black : Colors.white,
+          height: 368,
           width: 500,
         ),
       ]),
